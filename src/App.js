@@ -1,6 +1,11 @@
+import { NavLink } from 'react-router-dom';
+
 const App = () => {
   return (
-    <Header />
+    <Route>
+      <Header />
+    </Route>
+    
     
   );
 }
