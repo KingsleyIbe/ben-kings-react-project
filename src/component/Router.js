@@ -1,7 +1,11 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+ } from 'react-router-dom';
 import Header from './Header';
 
-const App = () => {
+const RouterApp = () => {
   return (
     <Router>
       <Header />
@@ -12,4 +16,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default RouterApp;
