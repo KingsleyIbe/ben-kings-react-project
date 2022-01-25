@@ -1,9 +1,6 @@
 const App = () => {
   return (
     <div></div>
-    <Route>
-      <Header />
-    </Route>
   );
 }
 
