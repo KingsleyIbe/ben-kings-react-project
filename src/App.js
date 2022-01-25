@@ -4,7 +4,9 @@ import Header from './component/Header';
 const App = () => {
   return (
     <Route>
+      
       <Header />
+
     </Route>
     
     
