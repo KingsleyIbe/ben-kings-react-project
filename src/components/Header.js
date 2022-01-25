@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
+import planet from '../images/planet.png';
 
 const Header = () => {
   return (
     <header>
       <div>
-        <img src="../images/planet.png" alt="planet logo"></img>
-        <h1>Space Traveler's Hub</h1>
+        <img src={planet} alt="planet logo" />
+         <h1>Space Traveler's Hub</h1>
       </div>
       <nav>
         <NavLink 
