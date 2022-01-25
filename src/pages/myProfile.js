@@ -1,7 +1,7 @@
 const MyProfile = () => {
   return (
     <div>
-      <h1>Site Under Construction</h1>
+      <h1>My Profile Site Under Construction</h1>
     </div>
   )
 };

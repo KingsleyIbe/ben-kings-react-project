@@ -1,7 +1,7 @@
 const Missions = () => {
   return (
     <div>
-      <h1>Site Under Construction</h1>
+      <h1>Missions Site Under Construction</h1>
     </div>
   )
 };
