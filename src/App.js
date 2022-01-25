@@ -1,4 +1,5 @@
-import { NavLink } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import Header from './component/Header';
 
 const App = () => {
   return (
