@@ -1,15 +1,9 @@
-import { Route } from 'react-router-dom';
-import Header from './component/Header';
-
 const App = () => {
   return (
+    <div></div>
     <Route>
-      
       <Header />
-
     </Route>
-    
-    
   );
 }
 
