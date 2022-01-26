@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissionApi } from '../redux/missions/missions';
 import Missions from '../pages/Missions';
 
 const MissionList = () => {
-  const missions = useSelector((state) => state.missionsReducer.missions)
+  const missions = useSelector((state) => state.missionsReducer.missions);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMissionApi());
   }, [dispatch]);
-
 
   return (
     <div className="table-container">
@@ -22,15 +21,15 @@ const MissionList = () => {
             <td className="table-col-4">Join</td>
           </tr>
         </thead>
-      
-      <tbody>
-      {missions.map((mission) => (
-        <Missions key={mission.mission_id} mission={mission} />
-      ))}
-      </tbody>
+
+        <tbody>
+          {missions.map((mission) => (
+            <Missions key={mission.mission_id} mission={mission} />
+          ))}
+        </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
 export default MissionList;

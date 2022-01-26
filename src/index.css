@@ -1,8 +1,11 @@
+/* Reset */
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -50,11 +53,10 @@ a {
 
 table {
   width: 100%;
-  
 }
 
-table, 
-th, 
+table,
+th,
 td {
   border: 1px solid black;
   padding: 10px;
@@ -69,7 +71,7 @@ td {
   width: 60%;
 }
 
- /* .table-col-1 {
+/* .table-col-1 {
   background-color: aqua;
   width: 10%;
 } */
