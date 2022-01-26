@@ -11,9 +11,7 @@ const Header = () => {
       <nav>
         <NavLink
           className="nav-item"
-          activeClassName="active"
           to="/"
-          exact
           >
             {' '}
             Rockets
@@ -21,9 +19,7 @@ const Header = () => {
             </NavLink>
         <NavLink
           className="nav-item"
-          activeClassName="active"
           to="/missions"
-          exact
           >
             {' '}
             Missions
@@ -31,9 +27,7 @@ const Header = () => {
             </NavLink>
         <NavLink
           className="nav-item"
-          activeClassName="active"
           to="/myProfile"
-          exact
           >
             {' '}
             My Profile
