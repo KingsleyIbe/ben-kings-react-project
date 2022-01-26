@@ -1,9 +1,9 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import missionReducer from './reducers/bookReducer';
+import rocketReducer from './reducers/rocket';
 
-const reducer = combineReducers({ missionReducer });
+const reducer = combineReducers({ rocketReducer });
 
 const store = createStore(
   reducer, applyMiddleware(logger, thunk),
