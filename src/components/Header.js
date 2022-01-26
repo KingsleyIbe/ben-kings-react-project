@@ -10,30 +10,24 @@ const Header = () => {
       </div>
       <nav>
         <NavLink 
-          className="nav-item" 
-          activeClassName="active" 
+          className="nav-item"  
           to="/" 
-          exact
           >
             {' '} 
             Rockets 
             {' '}
             </NavLink>
         <NavLink 
-          className="nav-item" 
-          activeClassName="active" 
+          className="nav-item"  
           to="/missions" 
-          exact
           >
             {' '} 
             Missions 
             {' '}
             </NavLink>
         <NavLink 
-          className="nav-item" 
-          activeClassName="active" 
+          className="nav-item"
           to="/myProfile" 
-          exact
           >
             {' '} 
             My Profile 
