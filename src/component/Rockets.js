@@ -1,17 +1,22 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchRocketsApi, rocketsReducer } from '../redux/reducers/rocket';
+import Rockets from '../pages/rockets';
 
-const Rocket = ({
-  id, name, type, flickr_images,
-}) => {
+const RocketList = () => {
+  const rockets = useSelector((state) => state.rocketsReducer.rockets)
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchRocketsApi());
+  }, [dispatch]);
+
   return (
     <div>
-      <h1> {name} </h1>
-      <h3> {type} </h3>
-      <img src={flickr_images} />
+      {rockets.map((rocket) => (
+        <Rockets key={rocket.id} rocket={rocket} />
+      ))}
     </div>
   );
 };
 
-export default Rocket;
+export default RocketList;

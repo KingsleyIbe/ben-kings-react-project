@@ -14,12 +14,10 @@ export const fetchRocket = (payload) => ({
 export const fetchRocketsApi = () => async (dispatch) => {
   const request = await fetch(baseUrl);
   const response = await request.json();
-
-  console.log(response);
   dispatch(fetchRocket(response));
 };
 
-const rocketReducer = (state = initialState, action) => {
+const rocketsReducer = (state = initialState, action) => {
   switch (action.type) {
 
     case FETCH_ROCKETS:
@@ -32,4 +30,4 @@ const rocketReducer = (state = initialState, action) => {
   }
 };
 
-export default rocketReducer;
+export default rocketsReducer;
