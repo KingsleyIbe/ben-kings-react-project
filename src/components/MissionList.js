@@ -12,10 +12,23 @@ const MissionList = () => {
 
 
   return (
-    <div>
+    <div className="table-container">
+      <table>
+        <thead>
+          <tr>
+            <td className="table-col-1">Mission</td>
+            <td className="table-col-2">Description</td>
+            <td className="table-col -3">Status</td>
+            <td className="table-col-4">Join</td>
+          </tr>
+        </thead>
+      
+      <tbody>
       {missions.map((mission) => (
         <Missions key={mission.mission_id} mission={mission} />
       ))}
+      </tbody>
+      </table>
     </div>
   )
 }

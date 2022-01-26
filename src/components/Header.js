@@ -3,12 +3,12 @@ import planet from '../images/planet.png';
 
 const Header = () => {
   return (
-    <header>
-      <div>
-        <img src={planet} alt="planet logo" />
+    <header className='header'>
+      <div className="logo-text">
+        <img src={planet} alt="planet logo" className="logo"/>
          <h1>Space Traveler's Hub</h1>
       </div>
-      <nav>
+      <nav className="navItems">
         <NavLink 
           className="nav-item"  
           to="/" 
