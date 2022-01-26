@@ -8,7 +8,7 @@ const Rockets = ({rocket}) => {
       <h1> {rocket.rocket_name} </h1>
       <h3> {rocket.rocket_type} </h3>
       <p>{rocket.success_rate_pct} % success rate</p>
-      <img src={rocket.flickr_images} width="200" />
+      <img src={rocket.flickr_images} alt={rocket.description} width="200" />
 
     </div>
   )
