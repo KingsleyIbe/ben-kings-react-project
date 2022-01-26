@@ -6,7 +6,7 @@ const initialState = {
   rockets: [],
 };
 
-export const fetchRockets = (payload) => ({
+export const fetchRocket = (payload) => ({
   type: FETCH_ROCKETS,
   payload,
 });
@@ -16,7 +16,7 @@ export const fetchRocketsApi = () => async (dispatch) => {
   const response = await request.json();
 
   console.log(response);
-  dispatch(fetchMission(response));
+  dispatch(fetchRocket(response));
 };
 
 const rocketReducer = (state = initialState, action) => {
