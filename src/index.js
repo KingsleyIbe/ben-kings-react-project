@@ -1,20 +1,17 @@
-import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import MyProfile from './pages/myProfile';
-import Rockets from './pages/rockets';
-import MissionList from './components/MissionList'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom';
+import App from './App';
+import store from './redux/configureStore';
 
-const App = () => {
-  return (
-    <div>
-      <Header />
-        <Routes>
-          <Route path="/" element={<Rockets />} />
-          <Route path="/missions" element={<MissionList />} />
-          <Route path="/myProfile" element={<MyProfile />} />
-        </Routes>
-    </div>
-  );
-};
-
-export default App;
+ReactDOM.render(
+  <React.StrictMode>
+    <Router>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
+);

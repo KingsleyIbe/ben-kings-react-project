@@ -1,5 +1,7 @@
 const FETCH_MISSIONS = 'FETCH_MISSIONS';
 
+const baseUrl = 'https://api.spacexdata.com/v3/missions';
+
 const initialState = {
   missions: [],
 };
@@ -10,10 +12,8 @@ export const fetchMission = (payload) => ({
 });
 
 export const fetchMissionApi = () => async (dispatch) => {
-  const request = await fetch('https://api.spacexdata.com/v3/missions');
-  console.log(request);
+  const request = await fetch(baseUrl);
   const response = await request.json();
-  console.log(response);
   dispatch(fetchMission(response));
 };
 
