@@ -1,15 +1,10 @@
-const FETCH_ROCKETS = 'FETCH_ROCKETS';
+const GET_ROCKET = 'GET_ROCKET';
 const RESERVE_ROCKET = 'RESERVE_ROCKET';
 const UNRESERVE_ROCKET = 'UNRESERVE_ROCKET';
+const initialState = [];
 
-const baseUrl = 'https://api.spacexdata.com/v3/rockets';
-
-const initialState = {
-  rockets: [],
-};
-
-export const fetchRocket = (payload) => ({
-  type: FETCH_ROCKETS,
+export const getRocket = (payload) => ({
+  type: GET_ROCKET,
   payload,
 });
 
@@ -23,13 +18,7 @@ export const unreserveRocket = (payload) => ({
   payload,
 });
 
-export const fetchRocketsApi = () => async (dispatch) => {
-  const request = await fetch(baseUrl);
-  const response = await request.json();
-  dispatch(fetchRocket(response));
-};
-
-const rocketsReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case RESERVE_ROCKET:
       return state.map((rocket) => {
@@ -41,14 +30,17 @@ const rocketsReducer = (state = initialState, action) => {
         if (rocket.id !== parseInt(action.payload, 10)) return rocket;
         return { ...rocket, reserved: false };
       });
-    case FETCH_ROCKETS:
-      return {
-        rockets: action.payload,
-      };
-
+    case GET_ROCKET:
+      return action.payload.map((key) => ({
+        id: key.id,
+        rocket_name: key.rocket_name,
+        description: key.description,
+        flickr_images: key.flickr_images[0],
+        reserved: false,
+      }));
     default:
       return state;
   }
 };
 
-export default rocketsReducer;
+export default reducer;

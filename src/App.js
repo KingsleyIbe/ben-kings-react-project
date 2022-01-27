@@ -1,21 +1,31 @@
-import { Routes, Route } from 'react-router-dom';
-import Header from './component/Header';
-import Missions from './pages/missions';
-import MyProfile from './pages/myProfile';
-import RocketList from './component/Rockets';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Header from './components/Header';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import Profile from './components/Profile';
 
 const App = () => (
-  <div>
-    <Header />
-    <Routes>
-      <Route path="/" element={<RocketList />} />
-      <Route path="/missions" element={<Missions />} />
-      <Route path="/myProfile" element={<MyProfile />} />
-    </Routes>
-  </div>
+  <Router>
+    <div className="app">
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Rockets />
+        </Route>
+        <Route path="/">
+          <Missions />
+        </Route>
+        <Route path="/Profile">
+          <Profile />
+        </Route>
+      </Switch>
+    </div>
+  </Router>
 );
 
 export default App;
