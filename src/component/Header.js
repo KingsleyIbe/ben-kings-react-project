@@ -2,8 +2,7 @@ import { NavLink } from 'react-router-dom';
 import planet from '../images/planet.png';
 import Card from 'react-bootstrap/Card';
 
-const Header = () => {
-  return (
+const Header = () => (
     <header className="container-fluid header">
     <div className="row no-guters">
       <div className="row col-6 no-guters">
@@ -39,6 +38,5 @@ const Header = () => {
     </div>
     </header>
   );
-};
 
 export default Header;

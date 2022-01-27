@@ -9,7 +9,7 @@ import './App.css';
 
 const App = () => (
   <div>
-    <Header/>
+    <Header />
     <Routes>
       <Route path="/" element={<RocketList />} />
       <Route path="/missions" element={<Missions />} />
