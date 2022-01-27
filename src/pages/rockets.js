@@ -16,7 +16,10 @@ export default function Rockets({ rocket }) {
         </span>
         {rocket.description}
       </p>
-      <button type="button" className="rocket-button">Book Button</button>
+        <button type="button" className="rocket-button">
+          Book Button
+        </button>
+
     </div>
   </div>;
 }
@@ -24,3 +27,15 @@ export default function Rockets({ rocket }) {
 Rockets.propTypes = {
   anyProp: PropTypes.string,
 };
+
+
+<p className="rockets-desc-p">
+              {rocket.reserved ? (
+                <button
+                  type="button"
+                  className="reserved-span rocktbtn"
+                  title="button"
+                >
+                  Reserved
+                </button>
+              ) : null}
