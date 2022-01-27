@@ -71,16 +71,6 @@ td {
   width: 60%;
 }
 
-/* .table-col-1 {
-  background-color: aqua;
-  width: 10%;
-} */
-
-/* .table-col-2 {
-  background-color: aqua;
-  width: 50%;
-}  */
-
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
