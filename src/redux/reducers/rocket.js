@@ -19,6 +19,7 @@ export const fetchRocketsApi = () => async (dispatch) => {
 
 const rocketsReducer = (state = initialState, action) => {
   switch (action.type) {
+
     case FETCH_ROCKETS:
       return {
         rockets: action.payload,

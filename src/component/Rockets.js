@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchRocketsApi } from '../redux/reducers/rocket';
+import { fetchRocketsApi, rocketsReducer } from '../redux/reducers/rocket';
 import Rockets from '../pages/rockets';
 
 const RocketList = () => {
-  const rockets = useSelector((state) => state.rocketsReducer.rockets);
+  const rockets = useSelector((state) => state.rocketsReducer.rockets)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRocketsApi());
