@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Rockets = ({ rocket }) => (
+export default function Rockets({ rocket }) {
   <div className='rocket'>
     <div>
       <img className="rocket-picture" src={rocket.flickr_images} alt={rocket.description} />
@@ -12,12 +12,8 @@ const Rockets = ({ rocket }) => (
       <button type="button" className="rocket-button">Book Button</button>
     </div>
   </div>
-);
+}
 
-  Rockets.propTypes(rocket) = {
-    flickr_images: PropTypes.any,
-    rocket_name: PropTypes.string,
-    description: PropTypes.string,
-  }
-
-export default Rockets;
+Rockets.propTypes = {
+  anyProp: PropTypes.any,
+};
