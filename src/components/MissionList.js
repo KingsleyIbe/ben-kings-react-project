@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissionApi } from '../redux/missions/missions';
@@ -7,8 +8,10 @@ const MissionList = () => {
   const missions = useSelector((state) => state.missionsReducer.missions);
   const dispatch = useDispatch();
   useEffect(() => {
+    // if (!missions.missions[0]) {
     dispatch(fetchMissionApi());
-  }, [dispatch]);
+    // }
+  }, []);
 
   return (
     <section className="table-container">
