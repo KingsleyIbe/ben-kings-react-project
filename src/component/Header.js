@@ -1,9 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import planet from '../images/planet.png';
-import Card from 'react-bootstrap/Card';
 
 const Header = () => (
-    <header className="container-fluid header">
+  <header className="container-fluid header">
     <div className="row no-guters">
       <div className="row col-6 no-guters">
         <img src={planet} alt="planet logo" className="col-2 img-fluid"/>
@@ -13,30 +12,30 @@ const Header = () => (
         <NavLink
           className="nav-item"
           to="/"
-          >
-            {' '}
-            Rockets
-            {' '}
-            </NavLink>
+        >
+          {' '}
+          Rockets
+          {' '}
+        </NavLink>
         <NavLink
           className="nav-item"
           to="/missions"
-          >
-            {' '}
-            Missions
-            {' '}
-            </NavLink>
+        >
+          {' '}
+          Missions
+          {' '}
+        </NavLink>
         <NavLink
           className="nav-item"
           to="/myProfile"
-          >
-            {' '}
-            My Profile
-            {' '}
-            </NavLink>
+        >
+          {' '}
+          My Profile
+          {' '}
+        </NavLink>
       </nav>
     </div>
-    </header>
+  </header>
   );
 
 export default Header;
