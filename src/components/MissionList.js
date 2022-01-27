@@ -11,7 +11,7 @@ const MissionList = () => {
   }, [dispatch]);
 
   return (
-    <div className="table-container">
+    <section className="table-container">
       <table>
         <thead>
           <tr>
@@ -27,7 +27,7 @@ const MissionList = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </section>
   );
 };
 
