@@ -4,6 +4,9 @@ import Missions from './pages/missions';
 import MyProfile from './pages/myProfile';
 import RocketList from './component/Rockets';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 const App = () => {
   return (
     <div>

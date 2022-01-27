@@ -1,14 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import planet from '../images/planet.png';
+import Card from 'react-bootstrap/Card';
 
 const Header = () => {
   return (
-    <header>
-      <div>
-        <img src={planet} alt="planet logo" />
-         <h1>Space Traveler's Hub</h1>
+    <header className="container-fluid header">
+    <div className="row no-guters">
+      <div className="row col-6 no-guters">
+        <img src={planet} alt="planet logo" className="col-2 img-fluid"/>
+         <h1 className="col-4 h5">Space Traveler's Hub</h1>
       </div>
-      <nav>
+      <nav className="col-6">
         <NavLink
           className="nav-item"
           to="/"
@@ -34,6 +36,7 @@ const Header = () => {
             {' '}
             </NavLink>
       </nav>
+    </div>
     </header>
   );
 };

@@ -1,0 +1,41 @@
+.header {
+  border-bottom: 1px solid black;
+}
+
+.rocket {
+  display: flex;
+  margin: 20px 10vw 20px 10vw;
+}
+
+.rocket-picture {
+  width: 20vw;
+}
+
+.rocket-reserved {
+  background-color: #18a2b8;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display: inline;
+}
+
+.rocket-text {
+  margin: 0 5vw 0 2vw;
+  display: inline;
+}
+
+.rocket-title {
+  font-size: 22px;
+}
+
+.rocket-description {
+  font-size: 14px;
+}
+
+.rocket-button {
+  background-color: #0d7bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
