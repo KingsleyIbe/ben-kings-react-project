@@ -17,11 +17,9 @@ export default function Rockets({ rocket }) {
           </span>
           {rocket.description}
         </p>
-        {rocket.reserved ? (
           <button type="button" className="rocket-button">
             Book Button
           </button>
-        ) : null}
       </div>
     </div>
   )
