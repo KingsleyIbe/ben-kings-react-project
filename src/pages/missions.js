@@ -6,7 +6,7 @@ import { joinMission } from '../redux/missions/missions';
 const Missions = (props) => {
   const {
     mission: {
-      id, mission_name, description, membership,
+      id, title, description, membership,
     },
   } = props;
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const Missions = (props) => {
   return (
     <tbody>
       <tr>
-        <td>{mission_name}</td>
+        <td>{title}</td>
         <td>{description}</td>
         <td>{membership ? (<p> Active Member </p>) : (<p> NOT A MEMBER </p>)}</td>
         <td>{membership ? (<button type="button" onClick={handleJoin}> Leave Mission </button>) : (<button type="button" onClick={handleJoin}> Join Mission </button>)}</td>
@@ -28,8 +28,8 @@ const Missions = (props) => {
 
 Missions.propTypes = {
   mission: PropTypes.shape({
-    id: PropTypes.number,
-    mission_name: PropTypes.string,
+    id: PropTypes.string,
+    title: PropTypes.string,
     description: PropTypes.string,
     membership: PropTypes.bool,
   }).isRequired,

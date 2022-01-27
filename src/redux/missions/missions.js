@@ -22,11 +22,22 @@ export const joinMission = (payload) => ({
 export const fetchMissionApi = () => async (dispatch) => {
   const request = await fetch(baseUrl);
   const response = await request.json();
-  dispatch(fetchMission(response));
+  const missions = [];
+  for (let i = 0; i < response.length; i += 1) {
+    const title = response[i].mission_name;
+    const id = response[i].mission_id;
+    const { description } = response[i];
+    const membership = false;
+    const object = {
+      id, title, description, membership,
+    };
+    missions.push(object);
+  }
+  dispatch(fetchMission(missions));
 };
 
 const updateMembership = (state, payload) => {
-  const currentState = state.map((mission) => {
+  const currentState = state.missions.map((mission) => {
     if (mission.id !== payload) return mission;
     return { ...mission, membership: !mission.membership };
   });
