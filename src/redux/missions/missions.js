@@ -19,7 +19,6 @@ export const fetchMissionApi = () => async (dispatch) => {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-
     case FETCH_MISSIONS:
       return {
         missions: action.payload,
