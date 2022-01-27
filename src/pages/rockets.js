@@ -18,8 +18,8 @@ export default function Rockets({ rocket }) {
       </p>
       <button type="button" className="rocket-button">Book Button</button>
     </div>
-  </div>
-};
+  </div>;
+}
 
 Rockets.propTypes = {
   anyProp: PropTypes.string,
