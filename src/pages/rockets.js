@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Rockets = ({ rocket }) => (
     <div className='rocket'>
@@ -12,5 +13,11 @@ const Rockets = ({ rocket }) => (
       </div>
     </div>
   );
+
+  Rockets.propTypes = {
+    flickr_images: PropTypes.any,
+    rocket_name: PropTypes.string,
+    description: PropTypes.string,
+  }
 
 export default Rockets;
