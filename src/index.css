@@ -175,12 +175,6 @@ td span {
   color: rgb(10, 10, 250);
 }
 
-.rockets:active,
-.missions:active,
-.profile:active {
-  text-decoration: none;
-}
-
 .rocket-card {
   margin-left: 5%;
   margin-right: 5%;
