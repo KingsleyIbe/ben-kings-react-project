@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SPACE TRAVELERS' HUB
 
-## Available Scripts
+>Space Travelers' Hub is web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Application data was fetched from the SpaceX API.
 
-In the project directory, you can run:
+## ADDITIONAL DESCRIPTION ABOUT THE APPLICATION
 
-### `npm start`
+The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Rockets /Dragons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking.
 
-### `npm test`
+![screenshot](/src/images/screenshot.jpeg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Missions
 
-### `npm run build`
+The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![screenshot](/src/images/screenshot.jpeg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### My Profile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The My Profile section displays all reserved rockets and space missions.
 
-### `npm run eject`
+![screenshot](/src/images/screenshot.jpeg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## BUILT WITH
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-- Basic Language - JavaScript 
+- Framework - React
+- Other technologies/tools: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+``` create-react-app
+    > create-react-app
+    > webpack for bundling files
+    > Babel for code transpiling
+    > Git for version control
+    > Eslint for JavaScript linting
+    > Stylelint for style linting
+    > Jest for testing
+    > Space-X API
+ ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Live Demo
 
-## Learn More
+[Live Demo Link]( https://kingsleyibe.github.io/ben-kings-react-project/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To get a local copy up and running follow these simple example steps.
 
-### Code Splitting
+1. Clone the repository using
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+git clone https://github.com/KingsleyIbe/ben-kings-react-project.git
+```
 
-### Analyzing the Bundle Size
+2. cd into the cloned repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+cd ben-kings-react-project
+```
 
-### Making a Progressive Web App
+3. You now have the access to the files on your local machine!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Optional steps
 
-### Advanced Configuration
+Install the node_modules/ folder to be able to locally run the linter commands. Run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm install
+```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To check Stylelint linter errors run:
 
-### `npm run build` fails to minify
+```
+npx stylelint "**/*.scss"
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To check ESLint errors run:
+
+```
+npx eslint .
+```
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@benjp009](https://github.com/benjp009)
+- Twitter: [@benjp009](https://twitter.com/benjp009)
+- LinkedIn: [benjaminpatin](https://www.linkedin.com/in/benjaminpatin/)
+
+👤 **Author2**
+
+- GitHub: [@Kingsleyibe](https://github.com/kingsleyibe)
+- Twitter: [@ibekingsley2](https://twitter.com/ibekingsley2)
+- LinkedIn: [Kingsley Ibe](https://www.linkedin.com/in/kingsley-ibe-5669a5134/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/KingsleyIbe/ben-kings-react-project/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
