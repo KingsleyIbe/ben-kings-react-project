@@ -7,4 +7,4 @@ export default function Missions() {
       <MissionsList />
     </div>
   );
-};
+}
