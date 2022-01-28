@@ -1,11 +1,10 @@
 import { React } from 'react';
 import MissionsList from '../pages/MissionList';
 
-const Missions = () => {
+export default function Missions() {
   return (
     <div>
       <MissionsList />
     </div>
   );
 };
-export default Missions;
