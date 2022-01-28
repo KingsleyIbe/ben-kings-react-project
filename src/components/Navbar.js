@@ -1,52 +1,34 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import planet from './images/planet.png';
-import classes from './Navbar.module.css';
+import logo from '../images/planet.png';
 
-const Navigation = () => (
-  <div className="nav-bar">
-    <div className="inner-nav-bar">
-      <div className={classes.logo}>
-        <img src={planet} alt="id" width="40px" height="40px" />
-        <h1>Space Travelers&#39; Hub</h1>
-      </div>
-      <ul>
-        <li>
-          <NavLink
-            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
-            to="/"
-          >
-            Rockets
-          </NavLink>
+const Navbar = () => (
+  <nav className="header-navbar">
+    <div className="logo">
+      <img
+        alt=""
+        src={logo}
+        width="35"
+        height="35"
+        className="header-logo"
+      />
+
+      Space Travelers Hub
+    </div>
+    <div className="header-nav">
+      <ul className="header-nav_ul">
+        <li className="rockets">
+          <NavLink to="/" exact>Rockets</NavLink>
         </li>
-        <li>
-          <NavLink
-            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
-            to="/missions"
-          >
-            Missions
-          </NavLink>
+        <li className="missions">
+          <NavLink to="./missions/Missions" exact>Missions</NavLink>
         </li>
-        <li>
-          <NavLink
-            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
-            to="/dragons"
-          >
-            Dragons
-          </NavLink>
-        </li>
-        <hr className="missions-break" />
-        <li>
-          <NavLink
-            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
-            to="/myprofile"
-          >
-            My Profile
-          </NavLink>
+        <li className="profile">
+          <NavLink to="/Profile" exact>My Profile</NavLink>
         </li>
       </ul>
     </div>
-  </div>
+  </nav>
 );
 
-export default Navigation;
+export default Navbar;
