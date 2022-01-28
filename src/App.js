@@ -12,7 +12,7 @@ import Profile from './components/Profile';
 
 import MyProfile from './pages/myProfile';
 import Rockets from './pages/rockets';
-import MissionList from './pages/missionList';
+import MissionList from './pages/MissionList';
 import './index.css';
 
 
