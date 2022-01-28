@@ -1,12 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import planet from './images/planet.png';
-import classes from './Navbar.module.css';
+import planet from '../images/planet.png';
 
 const Navigation = () => (
   <div className="nav-bar">
     <div className="inner-nav-bar">
-      <div className={classes.logo}>
+      <div>
         <img src={planet} alt="id" width="40px" height="40px" />
         <h1>Space Travelers&#39; Hub</h1>
       </div>
@@ -27,15 +26,6 @@ const Navigation = () => (
             Missions
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
-            to="/dragons"
-          >
-            Dragons
-          </NavLink>
-        </li>
-        <hr className="missions-break" />
         <li>
           <NavLink
             className={(navLink) => (navLink.isActive ? 'nav-link' : '')}
