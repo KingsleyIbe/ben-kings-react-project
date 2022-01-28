@@ -1,10 +1,11 @@
 import React from 'react';
-import RocketsCards from '../pages/RocketsCards';
+import MyProfile from '../pages/myProfile';
 
-const Rockets = () => (
+
+const Profile = () => (
   <div>
-    <RocketsCards />
+    <MyProfile />
   </div>
 );
 
-export default Rockets;
+export default Profile;
