@@ -26,9 +26,9 @@ code {
     monospace;
 }
 
-
 li {
   list-style: none;
+}
 
 .active {
   text-decoration: underline;
@@ -37,7 +37,6 @@ li {
 .header {
   display: flex;
   flex-direction: row;
-
 }
 
 .logo {
@@ -69,7 +68,6 @@ li {
   color: rgb(10, 10, 250);
 }
 
-
 .rockets:active,
 .missions:active,
 .profile:active {
@@ -86,17 +84,16 @@ li {
   flex-direction: row;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+}
 
 .table-container {
   margin: 0 30px;
   overflow-x: auto;
-
 }
 
 .rockets-desc {
   margin: 1rem;
 }
-
 
 .rockets-desc-btn {
   width: 150px;
@@ -105,7 +102,8 @@ li {
   border-radius: 5px;
   border: none;
   color: white;
-  
+}
+
 thead {
   font-size: large;
 }
@@ -116,7 +114,6 @@ td {
   border: 1px solid #d6d6d6;
   padding: 10px;
   text-align: left;
-
 }
 
 .rockets-desc-title {
