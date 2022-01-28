@@ -1,7 +1,11 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
+<<<<<<< HEAD
   Outlet,
+=======
+  Routes,
+>>>>>>> aeac5c79a69d497737e05c34496c3a3a662a3ac5
   Route,
 } from 'react-router-dom';
 import Header from './components/Header';
@@ -13,7 +17,11 @@ const App = () => (
   <Router>
     <div className="app">
       <Header />
+<<<<<<< HEAD
       <Outlet>
+=======
+      <Routes>
+>>>>>>> aeac5c79a69d497737e05c34496c3a3a662a3ac5
         <Route exact path="/">
           <Rockets />
         </Route>
@@ -23,7 +31,11 @@ const App = () => (
         <Route path="/Profile">
           <Profile />
         </Route>
+<<<<<<< HEAD
       </Outlet>
+=======
+      </Routes>
+>>>>>>> aeac5c79a69d497737e05c34496c3a3a662a3ac5
     </div>
   </Router>
 );
