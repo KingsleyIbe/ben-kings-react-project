@@ -5,9 +5,16 @@ import {
   Route,
 } from 'react-router-dom';
 import Header from './components/Header';
+
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import Profile from './components/Profile';
+
+import MyProfile from './pages/myProfile';
+import Rockets from './pages/rockets';
+import MissionList from './pages/missionList';
+import './index.css';
+
 
 const App = () => (
   <Router>
