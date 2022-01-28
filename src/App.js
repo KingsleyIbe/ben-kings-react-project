@@ -17,7 +17,7 @@ const App = () => (
         <Route exact path="/">
           <Rockets />
         </Route>
-        <Route path="/">
+        <Route path="/Missions">
           <Missions />
         </Route>
         <Route path="/Profile">

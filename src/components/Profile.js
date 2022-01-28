@@ -1,9 +1,10 @@
 import React from 'react';
-import MyProfile from '../pages/myProfile';
+import ProfileRocketsDisplay from '../pages/ProfileRocketsDisplay';
 
 const Profile = () => (
   <div>
-    <MyProfile />
+    <h1>My Rockets</h1>
+    <ProfileRocketsDisplay />
   </div>
 );
 
