@@ -24,6 +24,7 @@ const Header = () => (
         Missions
         {' '}
       </NavLink>
+      <span className="span-icon"> | </span>
       <NavLink
         className="nav-item"
         to="/myProfile"

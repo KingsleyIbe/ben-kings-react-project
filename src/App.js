@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import MyProfile from './pages/myProfile';
 import Rockets from './pages/rockets';
-import MissionList from './components/MissionList';
+import MissionList from './pages/MissionList';
 import './index.css';
 
 const App = () => (
