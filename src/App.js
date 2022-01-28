@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  Outlet,
   Route,
 } from 'react-router-dom';
 import Header from './components/Header';
@@ -13,7 +13,7 @@ const App = () => (
   <Router>
     <div className="app">
       <Header />
-      <Switch>
+      <Outlet>
         <Route exact path="/">
           <Rockets />
         </Route>
@@ -23,7 +23,7 @@ const App = () => (
         <Route path="/Profile">
           <Profile />
         </Route>
-      </Switch>
+      </Outlet>
     </div>
   </Router>
 );
