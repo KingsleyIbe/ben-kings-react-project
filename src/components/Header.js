@@ -1,7 +1,11 @@
-import { NavLink } from 'react-router-dom';
-import planet from '../images/planet.png';
+import React from 'react';
+import Navbar from './Navbar';
 
 const Header = () => (
+
+  <header className="header-section">
+    <Navbar />
+
   <header className="header">
     <div className="logo-text">
       <img src={planet} alt="planet logo" className="logo" />
@@ -34,6 +38,7 @@ const Header = () => (
         {' '}
       </NavLink>
     </nav>
+
   </header>
 );
 

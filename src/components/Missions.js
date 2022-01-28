@@ -1,6 +1,17 @@
 import { React } from 'react';
 import MissionList from '../pages/MissionList';
 
+import MissionsList from '../pages/MissionList';
+
+export default function Missions() {
+  return (
+    <div>
+      <MissionsList />
+    </div>
+  );
+}
+
+
 const Missions = () => (
   <div>
     <MissionList />
@@ -8,3 +19,4 @@ const Missions = () => (
 );
 
 export default Missions;
+
