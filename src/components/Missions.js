@@ -1,5 +1,5 @@
 import { React } from 'react';
-import MissionList from '../pages/MissionList';
+import MissionList from '../pages/missionList';
 
 const Missions = () => (
   <div>
