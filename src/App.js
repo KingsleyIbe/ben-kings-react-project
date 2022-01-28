@@ -1,19 +1,19 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from 'react-router-dom';
-import Header from './component/Header';
-import Rockets from './component/Rockets';
-import Missions from './component/Missions';
-import Profile from './component/Profile';
+import Header from './components/Header';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
+import Profile from './components/Profile';
 
 const App = () => (
   <Router>
     <div className="app">
       <Header />
-      <Switch>
+      <Routes>
         <Route exact path="/">
           <Rockets />
         </Route>
@@ -23,7 +23,7 @@ const App = () => (
         <Route path="/Profile">
           <Profile />
         </Route>
-      </Switch>
+      </Routes>
     </div>
   </Router>
 );
