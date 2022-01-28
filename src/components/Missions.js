@@ -6,4 +6,5 @@ const Missions = () => (
     <MissionList />
   </div>
 );
+
 export default Missions;
