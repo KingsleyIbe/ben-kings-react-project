@@ -4,7 +4,8 @@ import { joinMission, leaveMission, fetchMissionApi } from '../redux/missions/mi
 
 const MissionList = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missionsReducer.missions);
+  const data = useSelector((state) => state.missionsReducer.missions);
+  const missions = Object.values(data);
 
   useEffect(() => {
     dispatch(fetchMissionApi());
@@ -22,11 +23,11 @@ const MissionList = () => {
     return classes;
   };
 
-  const handelMission = (mission) => {
-    if (mission.mission.joined) {
-      dispatch(leaveMission(mission.mission_id));
+  const handleMission = (e) => {
+    if (e.target.textContent === 'Leave mission') {
+      dispatch(leaveMission(e.target.id));
     } else {
-      dispatch(joinMission(mission.mission_id));
+      dispatch(joinMission(e.target.id));
     }
   };
 
@@ -35,10 +36,10 @@ const MissionList = () => {
       <table className="table table-bordered table-striped">
         <thead>
           <tr>
-            <th scope="col">Mission</th>
-            <th scope="col">Description</th>
-            <th scope="col">Status</th>
-            <th scope="col">Join</th>
+            <th scope="col" style={{ width: '10%' }}>Mission</th>
+            <th scope="col" style={{ width: '66%' }}>Description </th>
+            <th scope="col" style={{ width: '12%' }}>Status</th>
+            <th scope="col" style={{ width: '12%' }}>Join</th>
           </tr>
         </thead>
         <tbody>
@@ -62,7 +63,7 @@ const MissionList = () => {
                   <span className={bdj}>{memberStatus}</span>
                 </td>
                 <td>
-                  <button type="button" className={btn} onClick={() => handelMission(mission)}>{memberAction}</button>
+                  <button id={mission.mission_id} type="button" style={{ padding: '10px' }} className={btn} onClick={handleMission}>{memberAction}</button>
                 </td>
               </tr>
             );

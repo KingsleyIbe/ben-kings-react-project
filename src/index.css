@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -47,12 +51,16 @@ a {
 }
 
 .table-container {
-  margin: 0 30px 0 30px;
+  margin: 0 30px;
   overflow-x: auto;
 }
 
 table {
   width: 100%;
+}
+
+thead {
+  font-size: large;
 }
 
 table,

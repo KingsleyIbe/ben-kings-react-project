@@ -42,7 +42,7 @@ const reducer = (state = initialState, action) => {
         }
         return mission;
       });
-      return newState;
+      return { missions: newState };
     }
     case LEAVE_MISSION: {
       const newState = state.missions.map((mission) => {
@@ -51,7 +51,7 @@ const reducer = (state = initialState, action) => {
         }
         return mission;
       });
-      return newState;
+      return { missions: newState };
     }
 
     default:
