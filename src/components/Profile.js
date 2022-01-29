@@ -1,10 +1,20 @@
+// Kevin issue no 22
 import React from 'react';
-import ProfileRocketsDisplay from '../pages/ProfileRocketsDisplay';
+import ProfileMissionsDisplay from './ProfileMissionsDisplay';
+import ProfileRocketsDisplay from './ProfileRocketsDisplay';
 
 const Profile = () => (
   <div>
-    <h1>My Rockets</h1>
-    <ProfileRocketsDisplay />
+    <div className="profile-section">
+      <div className="my-missions-profile">
+        <h2 className="profile-headers">My Missions</h2>
+        <ProfileMissionsDisplay />
+      </div>
+      <div className="my-rockets-profile">
+        <h2 className="profile-headers">My Rockets</h2>
+        <ProfileRocketsDisplay />
+      </div>
+    </div>
   </div>
 );
 

@@ -49,22 +49,33 @@ const RocketsCards = () => {
           <div className="rockets-desc">
             <h3 className="rockets-desc-title">{rocket.rocket_name}</h3>
             <p className="rockets-desc-p">
-              {rocket.reserved ? <button type="button" className="reserved-span">Reserved</button> : null}
+              {rocket.reserved ? (
+                <button
+                  type="button"
+                  className="reserved-span rocktbtn"
+                  title="button"
+                >
+                  Reserved
+                </button>
+              ) : null}
               {rocket.description}
             </p>
-            {rocket.reserved ? (
+            {rocket.reserved && (
               <button
                 type="button"
+                title="button"
                 onClick={unReserveRockets}
                 id={rocket.id}
-                className="unreserve-btn"
+                className="unreserve-btn rocktbtn"
               >
                 Cancel Reservation
               </button>
-            ) : (
+            )}
+            {!rocket.reserved && (
               <button
                 type="button"
-                className="rockets-desc-btn"
+                title="button"
+                className="rockets-desc-btn rocktbtn"
                 onClick={reserveRockets}
                 id={rocket.id}
               >

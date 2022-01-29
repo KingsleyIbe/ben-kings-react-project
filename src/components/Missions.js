@@ -1,10 +1,15 @@
-import { React } from 'react';
-import MissionsList from '../pages/MissionList';
+import { React, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchDataRequest } from '../redux/missions/missions';
 
-export default function Missions() {
+const Missions = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchDataRequest());
+  }, []);
   return (
-    <div>
-      <MissionsList />
-    </div>
+    <></>
   );
-}
+};
+
+export default Missions;
