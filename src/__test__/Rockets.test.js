@@ -2,7 +2,7 @@ import TestRenderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import Rockets from '../components/Rockets';
 import '@testing-library/jest-dom/extend-expect';
-import store from '../redux/configStore';
+import store from '../redux/configureStore';
 
 describe('Render the rockets list', () => {
   it('Renders the rockets correctly', () => {

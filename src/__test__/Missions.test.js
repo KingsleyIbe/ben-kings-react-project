@@ -1,7 +1,7 @@
 import TestRenderer from 'react-test-renderer';
 import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
-import store from '../redux/configStore';
+import store from '../redux/configureStore';
 import Missions from '../components/Missions';
 
 describe('Render the missions lists', () => {

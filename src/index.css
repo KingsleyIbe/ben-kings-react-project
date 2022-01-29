@@ -93,7 +93,7 @@ li {
 .rockets-desc-btn {
   width: 150px;
   height: 30px;
-  background-color: blue;
+  background-color: #0d7bff;
   border-radius: 5px;
   border: none;
   color: white;
@@ -105,7 +105,7 @@ li {
 }
 
 .reserved-span {
-  background-color: #5799aa;
+  background-color: #18a2b8;
   border-radius: 5px;
   border: none;
   color: white;
@@ -116,7 +116,8 @@ li {
   height: 30px;
   background-color: white;
   border-radius: 5px;
-  color: black;
+  border: 1px grey solid;
+  color: grey;
 }
 
 .profile-section {
@@ -173,9 +174,15 @@ td {
 }
 
 .btn-outline-danger {
-  background-color: #fff;
-  color: rgb(238, 37, 37);
+  background-color: #fff00;
+  color: #e87782;
+  border: 1px #e87782 solid;
+  border-radius: 40px;
   font-weight: bold;
+}
+
+.btn-outline-dark {
+  background-color: #fff00;
 }
 
 .bg-secondary {
@@ -184,10 +191,11 @@ td {
   padding: 1px 5px;
   border-radius: 5px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .bg-info {
-  background-color: #17a2b9;
+  background-color: #18a2b8;
   color: #fff;
   font-weight: bold;
 }
@@ -200,12 +208,13 @@ td span {
 
 .badge {
   border-radius: 3px;
+  padding: 5px;
   font-size: 10.5px;
   width: 86px;
 }
 
 .btn {
-  border-radius: 2px;
+  border-radius: 5px;
   width: 7rem;
   font-size: 16px;
   margin: 0 11px;
