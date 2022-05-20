@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/ben-kings-react-project/static/css/main.00225f88.css",
-    "main.js": "/ben-kings-react-project/static/js/main.9f7378c6.js",
-    "static/media/planet.png": "/ben-kings-react-project/static/media/planet.3f6fb2742f28651730c0.png",
+    "main.css": "/ben-kings-react-project/static/css/main.497a436e.css",
+    "main.js": "/ben-kings-react-project/static/js/main.842dcf67.js",
     "index.html": "/ben-kings-react-project/index.html",
-    "main.00225f88.css.map": "/ben-kings-react-project/static/css/main.00225f88.css.map",
-    "main.9f7378c6.js.map": "/ben-kings-react-project/static/js/main.9f7378c6.js.map"
+    "main.497a436e.css.map": "/ben-kings-react-project/static/css/main.497a436e.css.map",
+    "main.842dcf67.js.map": "/ben-kings-react-project/static/js/main.842dcf67.js.map"
   },
   "entrypoints": [
-    "static/css/main.00225f88.css",
-    "static/js/main.9f7378c6.js"
+    "static/css/main.497a436e.css",
+    "static/js/main.842dcf67.js"
   ]
 }
