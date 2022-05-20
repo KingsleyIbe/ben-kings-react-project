@@ -1,3 +1,8 @@
+/* stylelint-disable scss/at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family:
@@ -24,6 +29,11 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 li {

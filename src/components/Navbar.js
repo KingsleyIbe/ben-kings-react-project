@@ -1,17 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import planet from '../images/planet.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => (
-  <nav className="header-navbar">
+  <nav className="header-navbar text-[#fff]">
     <div className="logo">
-      <img
-        alt=""
-        src={planet}
-        width="50"
-        height="50"
-        className="header-logo"
-      />
+      <FontAwesomeIcon icon={faSpaceShuttle} className="header-logo text-[50px]" />
       <p className="space-travellers">Space Traveler&apos;s Hub</p>
     </div>
     <div className="header-nav">
