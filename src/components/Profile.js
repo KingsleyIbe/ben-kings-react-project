@@ -1,4 +1,3 @@
-// Kevin issue no 22
 import React from 'react';
 import ProfileMissionsDisplay from './ProfileMissionsDisplay';
 import ProfileRocketsDisplay from './ProfileRocketsDisplay';

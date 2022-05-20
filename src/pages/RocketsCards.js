@@ -41,9 +41,8 @@ const RocketsCards = () => {
               alt={rocket.rocket_name}
               width="300"
               height="200"
-              className="header-logo"
+              className="header-logo rocket-img"
               // eslint-disable-next-line react/jsx-no-duplicate-props
-              className="rocket-img"
             />
           </div>
           <div className="rockets-desc">
