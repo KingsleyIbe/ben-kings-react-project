@@ -39,14 +39,12 @@ const RocketsCards = () => {
             <img
               src={rocket.flickr_images}
               alt={rocket.rocket_name}
-              width="300"
-              height="200"
-              className="header-logo rocket-img"
+              className="header-logo rocket-img max-w-[200px] max-h-[200px]"
               // eslint-disable-next-line react/jsx-no-duplicate-props
             />
           </div>
           <div className="rockets-desc">
-            <h3 className="rockets-desc-title">{rocket.rocket_name}</h3>
+            <h3 className="rockets-desc-title font-bold">{rocket.rocket_name}</h3>
             <p className="rockets-desc-p">
               {rocket.reserved ? (
                 <button
@@ -74,7 +72,7 @@ const RocketsCards = () => {
               <button
                 type="button"
                 title="button"
-                className="rockets-desc-btn rocktbtn"
+                className="rockets-desc-btn rocktbtn mt-2"
                 onClick={reserveRockets}
                 id={rocket.id}
               >
