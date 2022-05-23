@@ -12,13 +12,13 @@ const Navbar = () => (
     <div className="header-nav">
       <ul className="header-nav_ul">
         <li className="rockets">
-          <NavLink to="/" exact>Rockets</NavLink>
+          <NavLink to="/rockets" exact>Rockets</NavLink>
         </li>
         <li className="missions">
-          <NavLink to="/Missions" exact>Missions</NavLink>
+          <NavLink to="/missions" exact>Missions</NavLink>
         </li>
         <li className="profile">
-          <NavLink to="/Profile" exact>My Profile</NavLink>
+          <NavLink to="/profile" exact>My Profile</NavLink>
         </li>
       </ul>
     </div>
