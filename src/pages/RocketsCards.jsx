@@ -45,11 +45,11 @@ const RocketsCards = () => {
           </div>
           <div className="rockets-desc">
             <h3 className="rockets-desc-title font-bold">{rocket.rocket_name}</h3>
-            <p className="rockets-desc-p">
+            <p className="rockets-desc-p py-2">
               {rocket.reserved ? (
                 <button
                   type="button"
-                  className="reserved-span rocktbtn"
+                  className="reserved-span rocktbtn p-2 mr-2"
                   title="button"
                 >
                   Reserved
@@ -63,7 +63,7 @@ const RocketsCards = () => {
                 title="button"
                 onClick={unReserveRockets}
                 id={rocket.id}
-                className="unreserve-btn rocktbtn"
+                className="unreserve-btn rocktbtn "
               >
                 Cancel Reservation
               </button>

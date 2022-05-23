@@ -118,27 +118,25 @@ li {
   background-color: #18a2b8;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: #fff;
 }
 
 .unreserve-btn {
   width: 150px;
   height: 30px;
-  background-color: white;
+  background-color: #18a2b8;
   border-radius: 5px;
-  border: 1px grey solid;
-  color: grey;
+  color: #fff;
 }
 
 .profile-section {
   display: flex;
-  width: 95%;
-  margin: auto;
+  width: 100%;
 }
 
 .my-rockets-profile,
 .my-missions-profile {
-  width: 48%;
+  width: 100%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -150,10 +148,15 @@ li {
   padding-top: 0.8rem;
   font-weight: 600;
   border-radius: 5px;
+  width: 100%;
 }
 
 .profile-headers {
   margin-left: 2.5rem;
+}
+
+.active {
+  border-bottom: 3px solid #fff;
 }
 
 .container {
