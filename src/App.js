@@ -11,6 +11,7 @@ import MissionsList from './pages/MissionsList';
 import MyProfile from './pages/MyProfile';
 import ProfileRocketsDisplay from './components/ProfileRocketsDisplay';
 import ProfileMissionsDisplay from './components/ProfileMissionsDisplay';
+import HomePage from './pages/Home';
 
 const App = () => (
   <Router>
@@ -18,6 +19,9 @@ const App = () => (
       <Header />
       <Missions />
       <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
         <Route exact path="/rockets">
           <Rockets />
         </Route>
