@@ -22,7 +22,7 @@
   background: #fff;
   opacity: 0.6;
   -webkit-animation: typing 2.5s steps(15) infinite;
-          animation: typing 2.5s steps(15) infinite;
+  animation: typing 2.5s steps(15) infinite;
 }
 
 @-webkit-keyframes typing {
@@ -38,6 +38,7 @@
     margin: 0 -35px 0 100%;
   }
 }
+
 .intro-text {
   display: none;
 }
@@ -51,4 +52,4 @@
     display: block;
     padding: 10px;
   }
-}/*# sourceMappingURL=Home.css.map */
+}
