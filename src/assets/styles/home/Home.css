@@ -1,0 +1,54 @@
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0.6;
+  -webkit-animation: typing 2.5s steps(15) infinite;
+          animation: typing 2.5s steps(15) infinite;
+}
+
+@-webkit-keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 100%;
+  }
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 100%;
+  }
+}
+.intro-text {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    display: none;
+  }
+
+  .intro-text {
+    display: block;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=Home.css.map */
