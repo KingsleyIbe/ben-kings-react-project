@@ -15,7 +15,7 @@ const MobileHeader = () => {
     <div className="header-mobile-container bg-[#0d7bff] text-[#fff] px-10">
       <header className="header-mobile">
         <span className="header-logo flex gap-10 items-center">
-          <div className="logo1 grid mt-5">
+          <div className="logo1 grid my-5">
             <FontAwesomeIcon icon={faSpaceShuttle} className="header-logo text-[30px] mb-2" />
             <p className="space-travellers text-[10px]">Space Traveler&apos;s Hub</p>
           </div>
@@ -23,7 +23,6 @@ const MobileHeader = () => {
             <FontAwesomeIcon icon={faBars} className="fa-bars" onClick={openMenu} />
           </button>
         </span>
-        <hr className="w-[100%] h-[5px] text-[#fff] mb-[100px] mt-10" />
         {menu && (
           <nav className="nav-mobile menu">
             <ul>
