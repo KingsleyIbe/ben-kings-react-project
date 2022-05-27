@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faSpaceShuttle } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const MobileHeader = () => {
   const [menu, setMenu] = useState(false);
@@ -15,10 +15,10 @@ const MobileHeader = () => {
     <div className="header-mobile-container bg-[#0d7bff] text-[#fff] px-10">
       <header className="header-mobile">
         <span className="header-logo flex gap-10 items-center">
-          <div className="logo1 grid my-5">
+          <Link to="/" className="logo1 grid my-5">
             <FontAwesomeIcon icon={faSpaceShuttle} className="header-logo text-[30px] mb-2" />
             <p className="space-travellers text-[10px]">Space Traveler&apos;s Hub</p>
-          </div>
+          </Link>
           <button type="button">
             <FontAwesomeIcon icon={faBars} className="fa-bars" onClick={openMenu} />
           </button>
