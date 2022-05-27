@@ -9,7 +9,7 @@ const Home = () => (
         <li><span>Welcome To Space Traveler&#39;s Hub</span></li>
       </ul>
     </div>
-    <h1 className="intro-text uppercase absolute top-[40%] left-[20%] text-[60px] text-center font-extrabold text-[#0d7bff]">Welcome To Space Traveler&#39;s Hub</h1>
+    <h1 className="intro-text uppercase absolute top-[40%] text-[60px] text-center font-extrabold text-[#0d7bff]">Welcome To Space Traveler&#39;s Hub</h1>
   </div>
 );
 
