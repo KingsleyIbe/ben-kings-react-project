@@ -12,11 +12,13 @@ import MyProfile from './pages/MyProfile';
 import ProfileRocketsDisplay from './components/ProfileRocketsDisplay';
 import ProfileMissionsDisplay from './components/ProfileMissionsDisplay';
 import HomePage from './pages/Home';
+import MobileHeader from './components/MobileHeader';
 
 const App = () => (
   <Router>
     <div className="app">
       <Header />
+      <MobileHeader />
       <Missions />
       <Switch>
         <Route exact path="/">
