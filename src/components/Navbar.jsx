@@ -1,14 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => (
   <nav className="header header-navbar text-[#fff]">
-    <div className="logo">
+    <Link to="/" className="logo">
       <FontAwesomeIcon icon={faSpaceShuttle} className="text-[50px]" />
       <p className="space-travellers">Space Traveler&apos;s Hub</p>
-    </div>
+    </Link>
     <div className="header-nav">
       <ul className="header-nav_ul text-[20px]">
         <li className="rockets">
