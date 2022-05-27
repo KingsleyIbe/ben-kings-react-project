@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ben-kings-react-project/static/css/main.6e63d0c7.css",
-    "main.js": "/ben-kings-react-project/static/js/main.ab3d1427.js",
+    "main.js": "/ben-kings-react-project/static/js/main.ec4dd03f.js",
     "static/media/space1.jpg": "/ben-kings-react-project/static/media/space1.b6859a42e4e21c162664.jpg",
     "index.html": "/ben-kings-react-project/index.html",
     "main.6e63d0c7.css.map": "/ben-kings-react-project/static/css/main.6e63d0c7.css.map",
-    "main.ab3d1427.js.map": "/ben-kings-react-project/static/js/main.ab3d1427.js.map"
+    "main.ec4dd03f.js.map": "/ben-kings-react-project/static/js/main.ec4dd03f.js.map"
   },
   "entrypoints": [
     "static/css/main.6e63d0c7.css",
-    "static/js/main.ab3d1427.js"
+    "static/js/main.ec4dd03f.js"
   ]
 }
