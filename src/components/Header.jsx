@@ -1,9 +1,8 @@
-// Elshamy code Step 2
 import React from 'react';
 import Navbar from './Navbar';
 
 const Header = () => (
-  <header className="header-section">
+  <header className="header header-mobile-container header-section bg-[#0d7bff] text-[#fff] p-2">
     <Navbar />
   </header>
 );

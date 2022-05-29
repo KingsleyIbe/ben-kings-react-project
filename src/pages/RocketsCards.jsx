@@ -39,20 +39,17 @@ const RocketsCards = () => {
             <img
               src={rocket.flickr_images}
               alt={rocket.rocket_name}
-              width="300"
-              height="200"
-              className="header-logo"
+              className="header-logo rocket-img max-w-[200px] max-h-[200px]"
               // eslint-disable-next-line react/jsx-no-duplicate-props
-              className="rocket-img"
             />
           </div>
           <div className="rockets-desc">
-            <h3 className="rockets-desc-title">{rocket.rocket_name}</h3>
-            <p className="rockets-desc-p">
+            <h3 className="rockets-desc-title font-bold">{rocket.rocket_name}</h3>
+            <p className="rockets-desc-p py-2">
               {rocket.reserved ? (
                 <button
                   type="button"
-                  className="reserved-span rocktbtn"
+                  className="reserved-span rocktbtn p-2 mr-2"
                   title="button"
                 >
                   Reserved
@@ -66,7 +63,7 @@ const RocketsCards = () => {
                 title="button"
                 onClick={unReserveRockets}
                 id={rocket.id}
-                className="unreserve-btn rocktbtn"
+                className="unreserve-btn rocktbtn "
               >
                 Cancel Reservation
               </button>
@@ -75,7 +72,7 @@ const RocketsCards = () => {
               <button
                 type="button"
                 title="button"
-                className="rockets-desc-btn rocktbtn"
+                className="rockets-desc-btn rocktbtn mt-2"
                 onClick={reserveRockets}
                 id={rocket.id}
               >

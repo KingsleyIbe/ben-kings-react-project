@@ -11,20 +11,22 @@ The Space Travelers' Hub consists of Rockets, Missions, and the My Profile secti
 ### Rockets 
 The Rockets section displays a list of current rockets available for booking.
 
-![Screenshot 2022-01-29 at 11 55 40](https://user-images.githubusercontent.com/31847346/151658353-b639dbf3-aef6-464b-9b5e-abd1174c8d1d.png)
+![Rockets List](./src/assets/images/rocketsUnreserved.jpeg)
+![Reserved Missions List](./src/assets/images/rocketsReserved.jpeg)
 
 ### Missions
 
 The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 
-![Screenshot 2022-01-29 at 11 55 19](https://user-images.githubusercontent.com/31847346/151658345-42bbfea3-e692-4b30-8d28-4148fc29772a.png)
+![Missions List](./src/assets/images/missions.jpeg)
+![Joined Missions List](./src/assets/images/missionsJoined.jpeg)
 
 
 ### My Profile
 
 The My Profile section displays all reserved rockets and space missions.
 
-![Screenshot 2022-01-29 at 11 56 33](https://user-images.githubusercontent.com/31847346/151658372-ad719bbe-2cd0-46b4-8978-fa718dd5c2b0.png)
+![Profile List](./src/assets/images/myProfile.jpeg)
 
 ## BUILT WITH
 
